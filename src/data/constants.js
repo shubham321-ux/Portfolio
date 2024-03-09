@@ -177,7 +177,7 @@ export const projects = [
       
     ],
     category: "web app",
-    github: "https://github.com/shubham321-ux",
+    github: "https://github.com/shubham321-ux/E-commerce",
     webapp: "https://shubham321-ux.github.io/E-commerce/",
   },
   {
@@ -190,7 +190,7 @@ export const projects = [
       "https://shubham321-ux.github.io/port-folio/static/media/Screenshot3.1914046d44b1ada1f7e9.png",
     tags: ["HTML", "CSS", "javascript"],
     category: "web app",
-    github: "https://github.com/shubham321-ux",
+    github: "https://github.com/shubham321-ux/flipcart_homePage_clone_Project",
     webapp: "https://shubham321-ux.github.io/flipcart_homePage_clone_Project/",
    
   },
@@ -210,7 +210,7 @@ export const projects = [
       
     ],
     category: "web app",
-    github: "https://github.com/shubham321-ux",
+    github: "https://github.com/shubham321-ux/car-rental",
     webapp: "https://shubham321-ux.github.io/car-rental/rentel.html",
   },
   {
@@ -223,7 +223,7 @@ export const projects = [
       "https://shubham321-ux.github.io/port-folio/static/media/Screenshot2.0fede73a097a7adf8b2e.png",
     tags: ["HTML", "CSS", "Javascript"],
     category: "machine learning",
-    github: "https://github.com/shubham321-ux",
+    github: "https://github.com/shubham321-ux/number-bubble-game",
     webapp: "https://shubham321-ux.github.io/number-bubble-game2/bubble.html",
     
   },
