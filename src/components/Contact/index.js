@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
@@ -126,17 +126,23 @@ const Contact = () => {
 
   //hooks
   const [open, setOpen] = React.useState(false);
+  const[email,setEmail]=useState()
+  const[name,setName]=useState()
+  const[subject,setSubject]=useState()
+  const[message,setMessage]=useState()
+  const[alldata,setAlldata]=useState()
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-      .then((result) => {
-        setOpen(true);
-        form.current.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
+    let DATA=new FormData(e.target)
+    let obj=Object.fromEntries(DATA)
+    console.log(obj)
+    setAlldata(obj)
+    alert("Details sent")
+    form.current.reset()
+  alert("Details sent")
+    
   }
 
 
@@ -153,11 +159,11 @@ const Contact = () => {
           <h3>8894381093</h3></ContactForm>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactInput type='email' placeholder="Your Email" value={email} name="email" required />
+          <ContactInput type='text' placeholder="Your Name" value={name} name="name" required/>
+          <ContactInput type='text' placeholder="Subject" value={subject} name="subject" />
+          <ContactInputMessage type='text' placeholder="Message" rows="4" value={message} name="message" />
+          <ContactButton type="submit" value="Send" /> 
         </ContactForm>
         
         <Snackbar
