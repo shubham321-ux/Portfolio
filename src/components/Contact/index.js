@@ -133,16 +133,25 @@ const Contact = () => {
   const[alldata,setAlldata]=useState()
   const form = useRef();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
     let DATA=new FormData(e.target)
     let obj=Object.fromEntries(DATA)
     console.log(obj)
     setAlldata(obj)
-    alert("Details sent")
     form.current.reset()
   alert("Details sent")
+  const response = await fetch('http://localhost:3002/demo',{
+    method:"POST",
+    body:JSON.stringify(obj),
+    headers:{
+      'Content-Type':'application/json'
+    }
     
+  })
+  const dataaa=await response.JSON()
+  console.log(dataaa)  
   }
 
 
