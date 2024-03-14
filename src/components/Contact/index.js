@@ -130,6 +130,7 @@ const Contact = () => {
   const[name,setName]=useState()
   const[subject,setSubject]=useState()
   const[message,setMessage]=useState()
+  const[phone,setphone]=useState()
   const[alldata,setAlldata]=useState()
   const form = useRef();
 
@@ -171,6 +172,7 @@ const Contact = () => {
           <ContactInput type='email' placeholder="Your Email" value={email} name="email" required />
           <ContactInput type='text' placeholder="Your Name" value={name} name="name" required/>
           <ContactInput type='text' placeholder="Subject" value={subject} name="subject" />
+          <ContactInput type='number' placeholder="phone num.(optional)" value={phone} name="phone" />
           <ContactInputMessage type='text' placeholder="Message" rows="4" value={message} name="message" />
           <ContactButton type="submit" value="Send" /> 
         </ContactForm>
