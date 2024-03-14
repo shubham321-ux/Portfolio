@@ -148,7 +148,6 @@ const Contact = () => {
     headers:{
       'Content-Type':'application/json'
     }
-    
   })
   const dataaa=await response.JSON()
   console.log(dataaa)  
