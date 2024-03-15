@@ -139,11 +139,15 @@ const Contact = () => {
 
     let DATA=new FormData(e.target)
     let obj=Object.fromEntries(DATA)
+    if(obj.phone.length!==10){
+      alert("phone Number should be 10 digit")
+    }
+    else{
     console.log(obj)
     setAlldata(obj)
     form.current.reset()
   alert("Details sent")
-  const response = await fetch('http://localhost:3002/demo',{
+  const response = await fetch('https://tired-red-vest.cyclic.app/demo',{
     method:"POST",
     body:JSON.stringify(obj),
     headers:{
@@ -152,6 +156,7 @@ const Contact = () => {
   })
   const dataaa=await response.JSON()
   console.log(dataaa)  
+}
   }
 
 
