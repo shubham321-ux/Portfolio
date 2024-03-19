@@ -13,7 +13,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/shubham321-ux",
   resume:
-    "",
+    "https://drive.google.com/file/d/1fnx8mBZ8Bra9GAGOjqTZzFjlmlGo_9Bq/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/shubham-shubham-18162428b",
   twitter: "",
   insta: "https://www.instagram.com/cool_dude_59x",

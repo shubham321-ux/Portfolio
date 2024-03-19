@@ -147,7 +147,7 @@ const Contact = () => {
     setAlldata(obj)
     form.current.reset()
   alert("Details sent")
-  const response = await fetch('https://tired-red-vest.cyclic.app/demo',{
+  const response = await fetch('https://tired-red-vest.cyclic.app/',{
     method:"POST",
     body:JSON.stringify(obj),
     headers:{
