@@ -111,8 +111,8 @@ export const experiences = [
   {
     id: 0,
     img: "https://www.adgod.in/wp-content/uploads/2023/06/AdGod-Black.png",
-    role: "Frontend Engineer Intern",
-    company: "AdGod Digital",
+    role: "Frontend Developer",
+    company: "Pixel Bharat ",
     date: "Jan 2024 - Present",
     desc: "Working on the frontend of the web application using ReactJS,SEO and Material UI.",
     skills: [
